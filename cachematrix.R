@@ -5,8 +5,14 @@
 ## already, or the inverse is calculated and stored
 ## in a cache for further use.
 
+## Usage Example
+## A <- matrix(c(1, 2, 3, 4)e, nrow=2, ncol=2)
+## B <- cacheSolve(A)
+
 ## Tis function creates a special matrix type which
-## allowsh results to be cached
+## allows results to be cached. It contains 4 
+## functions which gets/sets the value of the matrix,
+## and gets/sets the value of the inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
